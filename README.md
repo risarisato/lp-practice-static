@@ -14,7 +14,7 @@ http://risarisato.s223.xrea.com/
 公開鍵認証でSSH接続できるようになりました。
 
 ```
-ssh risarisato@s223.xrea.com
+https://risarisato.shop/
 ```
 
 もし家のルータ再起動などでグローバルIPアドレスが変わった場合は、以下のコントロールパネルより、もう一度許可し直してください。
