@@ -1,1 +1,1 @@
-scp -r ./ risarisato@s223.xrea.com:~/public_html/risarisato.shop/lp-practice-static
+scp -r ./ risarisato@s223.xrea.com:~/lp-practice-static
