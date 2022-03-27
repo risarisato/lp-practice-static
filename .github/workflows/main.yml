@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v2
     - name: 🔍 Allow IP
       run: |
-        GLOBAL_IP=`curl inet-ip.info/`
+        GLOBAL_IP=`curl inet-ip.info`
         curl -X POST https://api.xrea.com/v1/tool/ssh_ip_allow \
         -d "account=risarisato" \
         -d "server_name=s223.xrea.com" \
