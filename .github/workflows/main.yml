@@ -13,7 +13,7 @@ jobs:
         curl -X POST https://api.xrea.com/v1/tool/ssh_ip_allow \
         -d "account=risarisato" \
         -d "server_name=s223.xrea.com" \
-        -d "api_secret_key=aGi6bvo5vSfMyt6ZHg53Fsjw3QuyHG7m" \
+        -d "api_secret_key=kBZCKkh9XjQHgbSw5ctrdMwTPM5erTzT" \
         -d "param[addr]=${GLOBAL_IP}"
     
     - name: 📂 Sync files
