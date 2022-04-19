@@ -1,148 +1,44 @@
-/* urlがないとアイコン画像配置とか出来ない
-   下記はリンク先を記述している        */
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-html,
-body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-  background: linear-gradient(315deg, #aeb9ce 0%, #b8c3cf 74%);
-}
-
-/* wrapperはアイコン1列てに当てる
-   buttonは1つ1つのアイコンに当てる */
-.wrapper .button {
-  height: 60px; /* 高さ */
-  width: 60px; /* 横幅 */
-  float: left; /* アイコンが横一列表示 */
-  margin: 0 5px; /* 外側の余白 */
-  background-color: #fff; /* ボタンの色 */
-  border-radius: 50px; /* ボタンの角を丸くする */
-  cursor: pointer; /* カーソルがアイコンに当たると指になる */
-  box-shadow: 0px 10px 10px rgba(0, 0, 0);
-  transition: all 0.7s ease-in-out; /* ホバーの動く速さ */
-  overflow: hidden; /* 文字を隠す */
-
-}
-
-/* さらにボタンの中のアイコン装飾する */
-.wrapper .button .icon {
-  display:inline-block; /* インラインブロック要素は横幅と高さの指定が可能 */
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-  box-sizing: border-box; /* 要素の幅（width）と高さ（height）の中にpaddingとborderを含めるかどうか */
-  line-height: 60px; /* 丸の中のアイコンが真ん中ぐらいの位置にくる */
-  text-align: center; /* アイコンを中央にする */
-  transition: all 0.6s; /* 色がゆっくり表示 */
-}
-
-/* さらにボタンの中のアイコンのiを装飾する
-    URLのやつから記述と思われる */
-.wrapper .button .icon i {
-  font-size: 30px; /* アイコンを大きくした */
-  line-height: 60px; /* ボタンの中のアイコン位置調整 */
-}
-
-/* ボタンの名称文字の装飾 */
-.wrapper .button span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-}
-
-
-/* ホバーするアニメーション */
-.wrapper .button:hover {
-  width: 200px; /* ホバーして200px動く */
-}
-
-/* ホバーするとアイコンの色が変わる */
-.wrapper .button:nth-child(1):hover .icon {
-  background: #4267b2;
-}
-.wrapper .button:nth-child(2):hover .icon {
-  background: #1da1f2;
-}
-.wrapper .button:nth-child(3):hover .icon {
-  background: #e1306c;
-}
-.wrapper .button:nth-child(4):hover .icon {
-  background: #333;
-}
-.wrapper .button:nth-child(5):hover .icon {
-  background: #ff0000;
-}
-
-
-/* ホバーすると文字色が変わる */
-.wrapper .button:nth-child(1):hover span {
-  color: #4267b2;
-}
-.wrapper .button:nth-child(2):hover span {
-  color: #1da1f2;
-}
-.wrapper .button:nth-child(3):hover span {
-  color: #e1306c;
-}
-.wrapper .button:nth-child(4):hover span {
-  color: #333;
-}
-.wrapper .button:nth-child(5):hover span {
-  color: #ff0000;
-}
-
-/* ホバーしたらアイコンの色が変わる */
-.wrapper .button:hover .icon i {
-  color: white;
-}
-
-
-
-
-
-body {
-  background:#dee9ee;
-  color: #070707;
-  width: 630px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* 外の枠 */
 .content {
   background-color: #fff;
   width: 580px;
-  margin: 30px auto;   /* 上だけでauto時計周り上・右・下・左の順 */
+  margin: 30px auto;
+  /* 上だけでauto時計周り上・右・下・左の順 */
   border: 3px solid #58aab4;
-  padding: 30px;      /* 内側の余白 */
+  padding: 30px;
+  /* 内側の余白 */
 }
+
 
 /* ボタン操作の枠 */
-.text{
-  background:#c7d130;
-  font-weight:bold;/* 太字 */
-  color:#f83838;/* 字の色 */
+.text {
+  background: #c7d130;
+  font-weight: bold;
+  /* 太字 */
+  color: #f83838;
+  /* 字の色 */
 }
 
-/* ボタン */
-button{
-  font-weight:bold;/* 太字 */
-  color:#fffefe;/* 字の色 */
 
-  padding:  5px 20px;/* ボタンの縦・横 */
-  background-color: #4a4dee;/* ボタンの色 */
-  border-style:solid; /* 1本線で表示枠ボタン */
-  border-radius: 8px; /* 角の丸み */
-  font-size: 1em; /* フォントサイズ */
-  cursor: pointer; /* カーソルを指マークに */
+/* ボタン */
+button {
+  font-weight: bold;
+  /* 太字 */
+  color: #fffefe;
+  /* 字の色 */
+
+
+  padding: 5px 20px;
+  /* ボタンの縦・横 */
+  background-color: #4a4dee;
+  /* ボタンの色 */
+  border-style: solid;
+  /* 1本線で表示枠ボタン */
+  border-radius: 8px;
+  /* 角の丸み */
+  font-size: 1em;
+  /* フォントサイズ */
+  cursor: pointer;
+  /* カーソルを指マークに */
   margin: 3px;
 }
