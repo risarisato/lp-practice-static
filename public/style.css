@@ -1,0 +1,238 @@
+/* 初期設定→画面の左上からスタートするイメージ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ①wrapperの中央1300で左右はautoで表示 */
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* 見出し*/
+header {
+  width: 100%;
+  position: fixed;
+  background-color:none;
+  z-index: 100; /* z-indexは値はなんでもＯＫ一番真上、手前にくるってこと */
+  background-color: rgb(98, 115, 240);
+}
+
+header h2 {
+  padding: 15px;
+  font-size: 50px;
+  padding-left: 200px;
+  font-weight: 400; /* 文字を細くなる */
+}
+
+/* 見出しの中身の色 */
+header nav {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 25px;
+  padding-left: 50px;
+}
+
+/* 表示を縦並びから横並び表示 */
+header nav ul li {
+  list-style: none; /* 黒ポツを消す */
+  display: inline-block; /* blockだと縦並びがinline要素にすと横並びになる */
+  margin-top: 30px;
+  margin-right: 150px;
+}
+
+
+header ul li a {
+  text-decoration: dashed; /* テキストの装飾的な線の表示 */
+  color: white;
+}
+
+
+/* ②ここから
+ 写真3枚の箇所でwrapperの箇所
+ 写真が縦並びを横並びにするdisplay_flex
+*/
+.new-article {
+  display: flex;
+  justify-content: space-around; /* 画像が全体に */
+  align-items:center; /* 念のためにやっておく意味ないらしい */
+  padding-top: 180px;
+  margin-bottom: 70px;
+  text-align: center; /* 文字がすべて中央 */
+}
+
+/* 画像の大きさ */
+img {
+  width: 80%;
+  object-fit: cover; /* 画像の縦横比を維持したまま */
+}
+
+/* 写真のコメント文字の装飾 */
+.new-article p {
+  font-weight: 700; /* 文字を太く */
+  margin-top: 10px;
+}
+
+
+/* 2分割画面の大きさ全体設定で
+    まずはflexで横並び */
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* メインを左に60%寄せる */
+main {
+  flex: 0.6;
+}
+
+/* ここからメインとサブでわける！！ */
+/* サブ */
+main article {
+  margin-bottom: 100px; /* loremの下の余白の大きさ */
+}
+
+main h1{
+  font-size: 50px;
+}
+
+main ul {
+  list-style: none; /* 黒丸●を消す */
+  display: flex;  /* 2022/04/27_カテゴリが横並び */
+  padding: 10px 0 10px 40px; /* 位置調整＞2022/04/27_カテゴリが横並び */
+}
+
+main ul li {
+  margin-right: 40px; /* 2022/04/27__40px__カテゴリ */
+}
+
+/* メイン画像の大きさ */
+main img {
+  width: 80%;
+}
+
+/* メインの文字、中央で太字 */
+main .article-intro {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ここからはasideサブ画面設定 */
+/* asdie全体の幅を033にした */
+aside {
+  flex: 0.4;
+}
+
+/* 著者のアイコンの大きさ */
+.author img {
+  width: 20%;
+}
+
+
+/* asideでランキングとのスペース */
+aside .author {
+  text-align: center; /* 著者の自己紹介文を中央 */
+  margin-bottom: 100px; /* ランキングとの間スペース */
+}
+
+/* アイコンと名前の間スペース */
+aside .author h2 {
+  margin: 20px;
+}
+
+/* 自己紹介文 */
+.author p {
+  max-width: 300px;
+  margin: 0 auto; /* 中央 */
+  text-align: left; /* 左に寄せる */
+}
+
+/* ランキング */
+.ranking h4 {
+  text-align: center; /* ランキングを中央へ */
+  margin-bottom: 40px; /* スペース */
+}
+
+/* ランキング内の文章 */
+.ranking-article a {
+  text-align: center;
+  text-decoration: none; /* アンダーバーがなくなる */
+  color:black;
+}
+
+/* ランキング写真の大きさ */
+.ranking-article a img {
+  padding: 20px
+}
+
+/* ランキング写真<p>のスペース位置 */
+.ranking-article p {
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* asideアーカイブの記述 */
+.archive {
+  margin-top: 80px; /* 上スペース */
+}
+
+/* 「アーカイブ」が中央へ */
+.archive h4 {
+  text-align: center; 
+  margin-bottom: 30px;
+}
+
+/* アーカイブ情報 */
+.archive ul {
+  list-style: none; /* 黒丸を無くす */
+  width: 80%; /* 幅80パーセント */
+  margin: 0 auto; /* 中央に寄せる */
+  border-bottom: 1px solid black; /* liタグに最後のアンダーバーができないから */
+}
+
+/* アンダーライン */
+.archive ul li {
+  padding: 25px; /* アーカイブの間隔 */
+  border-top: 1px solid black;
+}
+
+/* 文字色 */
+.archive ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* 考えた方＞現状は各項目にflex横を当てている
+   これをcolum縦にしてレスポンシブに対応させる
+   >>横幅が768PXになったら縦に表示してってこと
+   【構成】
+   ・header
+   ・new-article-3写真
+   ・container wrapper-2分割
+     >>mainとasideで分割
+     >>>>flexで横並びしてcolumnで縦表示
+     */
+
+@media screen and (max-width: 768px) {
+
+  .new-article{
+    flex-direction: column;
+  }
+
+  .new-article article{
+    margin-bottom: 50px; /* 768pxになると「もっと読む」が写真にくっつくため */
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  aside .ranking img {
+    width: 100%;
+  }
+}

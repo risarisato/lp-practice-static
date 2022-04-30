@@ -1,100 +1,246 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>テストページ</title>
-    <link rel="stylesheet" href="css.css">
-    <link rel="stylesheet" href="url.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="url.css">
 </head>
 
-
 <body>
-    <div class="content">
-        <h1>ポートフォリオのための練習<br>
-            risarisato.shopへようこそ</h1>
+  <!-- headerの見出し部分の作成 -->
+  <header>
+    <div class="wrapper">
+      <!--wrapperは包み紙でcssでwide1300が固定される-->
+      <h2>risarisatoのポートフォリオ</h2>
     </div>
-    <h1>About</h1>
-    N予備校でプログラミングを勉強中です。<br>
-    [SKILL]
-    言語<br>
-    ・HTML、CSS、JavaScript、nodejs、python<br>
-    ソース管理<br>
-    ・git、github、githubProject、githubAction<br>
-    CLIやlinuxなど<br>
-    ・Docker、vim、<br>
-    扱ったことがあるツール<br>
-    ・trello、slack、Notion<br>
 
+    <nav>
+      <ul class="wrapper">
+        <li><a href="#">作品TOP</a></li>
+        <li><a href="#">skiills</a></li>
+        <li><a href="#">works</a></li>
+        <li><a href="#">illustrator</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- 写真3枚の箇所でwrapperでwide1300を維持 -->
+  <div class="new-article wrapper">
+    <article>
+      <img src="../img/result01.png" alt="PC画像">
+      <p>匿名ひとことチャット</p>
+      <div>
+        <a href="https://progedu.github.io/webappcontest/2021/winter/result/index.html">
+          URL</a>
+        <br>
+        <p><h5>
+          この作品は、幼稚園の子供がlineをやりたい‼<br>
+          子供のアカウントを作るのがイヤなので<br>
+          lineのようなアプリを自作しました。<br>
+          node.jsでexpressとsocket.ioを使っています。<br>
+        </h5></p>
+        <a href="https://infinite-reef-89560.herokuapp.com/">匿名チャットやってみる</a>
+      </div>
+    </article>
+    <article>
+      <img src="../img/result02.png" alt="PC画像">
+      <p>N予備校クイズ</p>
+      <div>
+        <a href="https://progedu.github.io/webappcontest/2021/summer/result/index.html">
+          URL</a>
+          <br>
+          <p><h5>
+            プログラミングを学び直して、<br>
+            4ヶ月の初作品です。<br>
+            わからなくても出来る範囲で仕上げました。
+          </h5></p>
+          <a href="https://risarisato.github.io/SummerContest/index05.html">クイズをやってみる</a>
+      </div>
+    </article>
+    <article>
+      <img src="../img/008.png" alt="PC画像">
+      <p>illustrator作品</p>
+      <div>
+        <p><h5>
+          感染症がピークになるまで働いていたホテルです。<br>
+          売込みやイベントなどで広告媒体を多数作成・CMS管理などをしていました。<br>
+          illustratorは独学です。
+        </h5></p>
+        <a href="#">もっと読む</a>
+      </div>
+    </article>
+  </div>
 
-    <h3><b>資格・表彰<br>
-            ・sun認定プログラマ<br>
-            ・第二種電気工事士<br>
-            ・調理師<br>
-            ・応用情報技術者<br>
+  <!-- 2columeで「メイン」と「アサイド」でわける -->
+  <div class="container wrapper">
+    <main>
+      <article>
+        <h1>[skills]</h1>
+        <ul>
+          <li>2022/04/27</li>
+          <li>OS</li>
+          <li>ソース管理</li>
+          <li>言語</li>
+          <li>linuxなど</li>
+        </ul>
 
+        <div class="article-intro">
+        <h2>
+          <p>
+          [言語]
+          JavaScript、Nodejs、Python
+          </p><br>
+          <p>
+          [ソース管理]
+          Git、Github
+          </p>
+          <p><br>
+          [ツール]
+          Trello、Slack、Notion
+          </p>
+          <p><br>
+          [CLIやlinux]
+          Docker、vim
+          </p>
+          <p><br>
+          [イラスト]
+          Illustrator
+          </p>
+          </h2>
+          <p><br>
+          [その他]
+          既婚者、禁煙者
+          </p>
+      </div>
 
+      </article>
+      <article>
+        <h1>[Works]</h1>
+        <ul>
+          <li>2022/04/27</li>
+          <li>過去の作品など</li>
+        </ul>
+        <img src="../img/assessment.PNG">
+        <div class="article-intro">
+          <p>
+            名前を入れると、名前を文字コードに変換合計して<br>
+            16パターンある「診断基準」に当てはめて表示します。<br>
+          </p>
+          <div>
+            <a href="https://risarisato.github.io/assessment/assessment.html">あなたのいいところ診断ゲーム</a>
+          </div>
+        </div>
 
+        <img src="../img/dino-game.PNG">
+        <div class="article-intro">
+          <p>
+            javascriptでcanvasを使った作品です。<br>
+            恐竜がジャンプして敵を避けます。<br>
+            フレームが進むごとに点数が加算されます。<br>
+            操作方法：spaceでジャンプ<br>
+            リトライ：Enter<br>
+          </p>
+          <div>
+            <a href="https://risarisato.github.io/dino-game/dino.html">ディノゲーム</a>
+          </div>
+        </div>
 
-            <!--
-    こんばんは ○ 標準のホームページＵＲＬ http://risarisato.s223.xrea.com/ <br>
-    https://risarisato.shop/ <br>
-    冬のコンテスト作品 https://infinite-reef-89560.herokuapp.com/ <br>
-    夏のコンテスト作品 https://risarisato.github.io/SummerContest/index05.html <br>
-    github https://github.com/risarisato/winter-contest <br>
-    githubActionで自動化されいるかpushして確認します<br>
-    -->
+        <img src="../img/hp.PNG">
+        <div class="article-intro">
+          <p>
+            [ポートフォリオサイトについて]<br>
+            ・githubProjectでリスト化してから<br>
+            ・githubActionにて、デプロイの自動化をしました。<br>
+          </p>
+          <div>
+            <a href="https://github.com/risarisato/lp-practice-static">GItHub</a>
 
+      </article>
+    </main>
+    <aside>
+      <section class="author">
+        <img src="../img/risa.png" alt="著者"/>
+        <h2>risarisato</h2>
+        <p>
+          N予備校でプログラミングを勉強中です。<br>
+          <br>【表彰2021年度】<br>
+          ・「Webアプリコンテスト」技術特別賞
+          ・「Webページコンテスト」健闘賞<br>
+          <br>【資格】<br>
+          ・sun認定javaプログラマ<br>
+          ・第二種電気工事士<br>
+          ・調理師
+        </p>
+      </section>
+      <section class="ranking">
+        <h4>Illustrator作品の一部</h4>
+        <div class="ranking-article">
+          <a href="#">
+            <img src="../img/005.png" alt="illustrator作品1">
+            <p>年末年始のイベントカレンダー作品です。</p>
+          </a>
+        </div>
+        <div class="ranking-article">
+          <a href="#">
+            <img src="../img/001.png" alt="illustrator作品2">
+            <p>感染症対策で在宅ワークの売込み作品です。</p>
+          </a>
+        <div class="ranking-article">
+          <a href="#">
+            <img src="../img/003.png" alt="illustrator作品3">
+            <p>ロビーにてチアダンスの広告です。</p>
+          </a>
+        </div>
+        <div class="ranking-article">
+          <a href="#">
+            <img src="../img/007.png" alt="illustrator作品4">
+            <p>毎月の日替わり、お風呂の広告です。</p>
+          </a>
+        </div>
+      </section>
+      <section class="archive">
+        <h4>修正履歴</h4>
+        <ul>
+          <li><a href="#">2022/05/02_css修正</a>
+          <li><a href="#">2022/05/01_デプロイ</a>
+          <li><a href="#">2022/04/19_仮HP作成</a>
+        </ul>
+      </section>
+    </aside>
+  </div>
 
-
-            <div class="text">
-                20220328上書き確認
-                20220329上書き確認
-                20220329 git pull:確認
-
-                <ol type="A">
-                    <li><button type="button">https://risarisato.shop/</button></li>
-                    <li><button type="button">https://infinite-reef-89560.herokuapp.com/</button></li>
-                    <li><button type="button">https://risarisato.github.io/SummerContest/index05.html</button></li>
-                    <li><button type="button"></button>準備中</li>
-                </ol>
-            </div>
-
-
-
-
-            <div class="wrapper">
-                <div class="button">
-                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
-                    <span>Facebook</span>
-                </div>
-                <div class="button">
-                    <div class="icon"><i class="fab fa-twitter"></i></div>
-                    <span>Twitter</span>
-                </div>
-                <div class="button">
-                    <div class="icon"><i class="fab fa-instagram"></i></div>
-                    <span>Instagram</span>
-                </div>
-                <div class="button">
-                    <div class="icon"><i class="fab fa-github"></i></div>
-                    <span>Github</span>
-                </div>
-                <div class="button">
-                    <div class="icon"><i class="fab fa-youtube"></i></div>
-                    <span>Youtube</span>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            Copyright © risarisato 2022
+<div id="url">
+  <div class="wrapper">
+    <div class="button">
+        <div class="icon"><i class="fab fa-facebook-f"></i></div>
+        <span>Facebook</span>
+    </div>
+    <div class="button">
+        <div class="icon"><i class="fab fa-twitter"></i></div>
+        <span>Twitter</span>
+    </div>
+    <div class="button">
+        <div class="icon"><i class="fab fa-instagram"></i></div>
+        <span>Instagram</span>
+    </div>
+    <div class="button">
+        <div class="icon"><i class="fab fa-github"></i></div>
+        <span>Github</span>
+    </div>
+    <div class="button">
+        <div class="icon"><i class="fab fa-youtube"></i></div>
+        <span>Youtube</span>
+    </div>
+  </div>
+  <br>
+  <br>
+  Copyright © risarisato 2022
+</div>
 </body>
-
 
 </html>
