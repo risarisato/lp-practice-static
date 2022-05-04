@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* 
+/*
 html,
 body {
   display: grid;
@@ -18,6 +18,23 @@ body {
   background: linear-gradient(315deg, #b1f7e8 0%, #bcf267 74%);
 }
 */
+body {
+background-color:rgb(214, 155, 17);
+}
+
+
+/* フッターの装飾 */
+footer {
+  display: grid; /* これが大切 */
+  width: 100%;
+  height: 160px; 
+  padding: 10px 0;
+  background-color: #32ebff;
+}
+.footer p {
+  text-align: center;
+}
+
 
 /* wrapperはアイコン1列てに当てる
    buttonは1つ1つのアイコンに当てる */
@@ -75,15 +92,11 @@ body {
 .wrapper .button:nth-child(2):hover .icon {
   background: #1da1f2;
 }
+
 .wrapper .button:nth-child(3):hover .icon {
-  background: #e1306c;
-}
-.wrapper .button:nth-child(4):hover .icon {
   background: #333;
 }
-.wrapper .button:nth-child(5):hover .icon {
-  background: #ff0000;
-}
+
 
 
 /* ホバーすると文字色が変わる */
@@ -94,14 +107,9 @@ body {
   color: #1da1f2;
 }
 .wrapper .button:nth-child(3):hover span {
-  color: #e1306c;
-}
-.wrapper .button:nth-child(4):hover span {
   color: #333;
 }
-.wrapper .button:nth-child(5):hover span {
-  color: #ff0000;
-}
+
 
 /* ホバーしたらアイコンの色が変わる */
 .wrapper .button:hover .icon i {

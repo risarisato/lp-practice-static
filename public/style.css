@@ -22,9 +22,9 @@ header {
 }
 
 header h2 {
-  padding: 15px;
-  font-size: 50px;
-  padding-left: 200px;
+  padding: 10px;
+  font-size: 35px;
+  padding-left: 100px;
   font-weight: 400; /* 文字を細くなる */
 }
 
@@ -32,20 +32,20 @@ header h2 {
 header nav {
   width: 100%;
   background-color: rgb(0, 0, 0);
-  padding-bottom: 25px;
-  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-left: 150px;
 }
 
 /* 表示を縦並びから横並び表示 */
 header nav ul li {
   list-style: none; /* 黒ポツを消す */
   display: inline-block; /* blockだと縦並びがinline要素にすと横並びになる */
-  margin-top: 30px;
-  margin-right: 150px;
+  margin-top: 10px;
+  margin-right: 100px;
 }
 
 
-header ul li a {
+header ul li {
   text-decoration: dashed; /* テキストの装飾的な線の表示 */
   color: white;
 }
@@ -59,8 +59,8 @@ header ul li a {
   display: flex;
   justify-content: space-around; /* 画像が全体に */
   align-items:center; /* 念のためにやっておく意味ないらしい */
-  padding-top: 180px;
-  margin-bottom: 70px;
+  padding-top: 150px;
+  margin-bottom: 50px;
   text-align: center; /* 文字がすべて中央 */
 }
 
@@ -92,17 +92,19 @@ main {
 /* ここからメインとサブでわける！！ */
 /* サブ */
 main article {
-  margin-bottom: 100px; /* loremの下の余白の大きさ */
+  margin-bottom: 100px; /* 下の余白の大きさ */
 }
 
 main h1{
-  font-size: 50px;
+  font-size: 40px;
+  padding-left: 30px;
+
 }
 
 main ul {
   list-style: none; /* 黒丸●を消す */
-  display: flex;  /* 2022/04/27_カテゴリが横並び */
-  padding: 10px 0 10px 40px; /* 位置調整＞2022/04/27_カテゴリが横並び */
+  display: flex;  /* カテゴリが横並び */
+  padding: 10px 0 10px 40px; /* 位置調整＞カテゴリが横並び */
 }
 
 main ul li {
@@ -117,7 +119,9 @@ main img {
 /* メインの文字、中央で太字 */
 main .article-intro {
   text-align: center;
+  margin-right: 100px;
   font-weight: bold;
+  margin-bottom: 100px; /* 下の余白の大きさ */
 }
 
 /* ここからはasideサブ画面設定 */
@@ -132,15 +136,21 @@ aside {
 }
 
 
-/* asideでランキングとのスペース */
+/* asideでillustratorとのスペース */
 aside .author {
   text-align: center; /* 著者の自己紹介文を中央 */
-  margin-bottom: 100px; /* ランキングとの間スペース */
+  margin-bottom: 170px; /* illustratorとの間スペース */
 }
+
+aside ul {
+  list-style: none; /* 黒丸●を消す */
+  padding: 5px 0px 0px 40px; /* 位置調整＞カテゴリが横並び */
+}
+
 
 /* アイコンと名前の間スペース */
 aside .author h2 {
-  margin: 20px;
+  margin: 10px;
 }
 
 /* 自己紹介文 */
@@ -150,53 +160,56 @@ aside .author h2 {
   text-align: left; /* 左に寄せる */
 }
 
-/* ランキング */
-.ranking h4 {
-  text-align: center; /* ランキングを中央へ */
+/* illustrator作品の一部 */
+.ranking h3 {
+  text-align: center; /* illustratorを中央へ */
   margin-bottom: 40px; /* スペース */
 }
 
-/* ランキング内の文章 */
+
+
+/* illustrator内の文章 */
 .ranking-article a {
   text-align: center;
   text-decoration: none; /* アンダーバーがなくなる */
   color:black;
 }
 
-/* ランキング写真の大きさ */
+/* illustrator写真の大きさ */
 .ranking-article a img {
   padding: 20px
 }
 
-/* ランキング写真<p>のスペース位置 */
+/* illustrator写真<p>のスペース位置 */
 .ranking-article p {
-  padding-right: 10px;
-  margin-bottom: 10px;
+  padding-right: 90px;
+  margin-bottom: 40px;
+  margin-top: 0px
 }
 
 
-/* asideアーカイブの記述 */
+/* aside修正履歴までスペース記述 */
 .archive {
-  margin-top: 80px; /* 上スペース */
+  margin-top: 120px; /* 上スペース */
 }
 
-/* 「アーカイブ」が中央へ */
+/* 「修正履歴」が中央へ */
 .archive h4 {
-  text-align: center; 
+  text-align: center;
   margin-bottom: 30px;
 }
 
-/* アーカイブ情報 */
+/* 修正履歴情報 */
 .archive ul {
   list-style: none; /* 黒丸を無くす */
-  width: 80%; /* 幅80パーセント */
+  width: 120%; /* 幅80パーセント */
   margin: 0 auto; /* 中央に寄せる */
-  border-bottom: 1px solid black; /* liタグに最後のアンダーバーができないから */
+  /* border-bottom: 1px solid black;  liタグに最後のアンダーバーができないから */
 }
 
 /* アンダーライン */
 .archive ul li {
-  padding: 25px; /* アーカイブの間隔 */
+  padding: 10px; /* 修正履歴の間隔 */
   border-top: 1px solid black;
 }
 
