@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+/* 外の大きな枠 */
+.content {
+  background-color: rgb(196, 246, 250);
+  max-width: 1300px;
+  margin: 0px auto;   /* 上だけでauto時計周り上・右・下・左の順 */
+  border: 5px solid #58aab4; /* 外枠線色 */
+  padding: 0px;      /* 内側の余白 */
+}
+
+body {
+  background-color:rgb(255, 255, 255);
+  }
+
+
 /* ①wrapperの中央1300で左右はautoで表示 */
 .wrapper {
   max-width: 1300px;
@@ -14,11 +28,11 @@
 
 /* 見出し*/
 header {
-  width: 100%;
+  width: 1290px;
   position: fixed;
   background-color:none;
   z-index: 100; /* z-indexは値はなんでもＯＫ一番真上、手前にくるってこと */
-  background-color: rgb(98, 115, 240);
+  background-color: rgb(239, 245, 65);
 }
 
 header h2 {
@@ -33,7 +47,7 @@ header nav {
   width: 100%;
   background-color: rgb(0, 0, 0);
   padding-bottom: 10px;
-  padding-left: 150px;
+  padding-left: 60px;
 }
 
 /* 表示を縦並びから横並び表示 */
@@ -41,13 +55,19 @@ header nav ul li {
   list-style: none; /* 黒ポツを消す */
   display: inline-block; /* blockだと縦並びがinline要素にすと横並びになる */
   margin-top: 10px;
-  margin-right: 100px;
+  margin-right: 70px;
 }
 
 
 header ul li {
   text-decoration: dashed; /* テキストの装飾的な線の表示 */
   color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
 }
 
 
@@ -63,6 +83,8 @@ header ul li {
   margin-bottom: 50px;
   text-align: center; /* 文字がすべて中央 */
 }
+
+
 
 /* 画像の大きさ */
 img {
@@ -98,7 +120,6 @@ main article {
 main h1{
   font-size: 40px;
   padding-left: 30px;
-
 }
 
 main ul {
@@ -190,7 +211,7 @@ aside .author h2 {
 
 /* aside修正履歴までスペース記述 */
 .archive {
-  margin-top: 120px; /* 上スペース */
+  margin-top: 160px; /* 上スペース */
 }
 
 /* 「修正履歴」が中央へ */
@@ -202,7 +223,7 @@ aside .author h2 {
 /* 修正履歴情報 */
 .archive ul {
   list-style: none; /* 黒丸を無くす */
-  width: 120%; /* 幅80パーセント */
+  width: 100%; /* 幅80パーセント */
   margin: 0 auto; /* 中央に寄せる */
   /* border-bottom: 1px solid black;  liタグに最後のアンダーバーができないから */
 }

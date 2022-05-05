@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <div class="content">
   <!-- headerの見出し部分の作成 -->
   <header>
     <div class="wrapper">
@@ -23,10 +24,9 @@
 
     <nav>
       <ul class="wrapper">
-        <li>作品TOP
-        <li>skiills
-        <li>works
-        <li>illustrator
+        <li><a href="#">作品TOP</a>  <!-- トップに戻る場合は#のみでOK -->
+        <li><a href="#skills">skiills</a>
+        <li><a href="#works & illustrator">works & illustrator</a>
       </ul>
     </nav>
   </header>
@@ -77,6 +77,7 @@
           感染症がピークになるまで働いていたホテルです。<br>
           売込みやイベントなどで広告媒体を多数作成・CMS管理などをしていました。<br>
           illustratorは独学です。
+          <a id="skills"></a>  <!-- リンク先 -->
         </h5>
         </p>
       </div>
@@ -90,38 +91,32 @@
         <h1>[skills]</h1>
         <ul>
           <li>2022/04/27</li>
-          <li>OS</li>
           <li>ソース管理</li>
           <li>言語</li>
           <li>linuxなど</li>
         </ul>
 
         <div class="article-intro">
-          <h2>
+          <h2 style="text-align:left">
             <p>
-              [言語]
-              JavaScript、Nodejs、Python
+              [言語]JavaScript、Nodejs、Python
             </p><br>
             <p>
-              [ソース管理]
-              Git、Github
+              [ソース管理]Git、Github
             </p>
             <p><br>
-              [ツール]
-              Trello、Slack、Notion
+              [ツール]Trello、Slack、Notion
             </p>
             <p><br>
-              [CLIやlinux]
-              Docker、vim
+              [CLIやlinux]Docker、vim
             </p>
             <p><br>
-              [イラスト]
-              Illustrator
+              [イラスト]Illustrator
+              <a id="works & illustrator"></a>  <!-- リンク先 -->
             </p>
-          </h2>
           <p><br>
-            [その他]
-            既婚者、禁煙者
+            [その他]既婚者、子持ち、禁煙者
+          </h2>
           </p>
         </div>
 
@@ -132,18 +127,18 @@
           <li></li>
           <li>過去のプログラミング作品や使用ツールなど</li>
         </ul>
-        <img src="img/assessment.PNG">
+        <img src="img/assessment.png">
         <div class="article-intro">
           <p>
             名前を入れると、名前を文字コードに変換合計して<br>
-            16パターンある「診断基準」に当てはめて表示します。<br>
+            16パターンある「診断基準」に当てはめて診断します。<br>
           </p>
           <div>
             <a href="https://risarisato.github.io/assessment/assessment.html">-あなたのいいところ診断ゲーム-</a>
           </div>
         </div>
 
-        <img src="img/dino-game.PNG">
+        <img src="img/dino-game.png">
         <div class="article-intro">
           <p>
             javascriptでcanvasを使った作品です。<br>
@@ -157,7 +152,7 @@
           </div>
         </div>
 
-        <img src="img/omikuji.PNG">
+        <img src="img/omikuji.png">
         <div class="article-intro">
           <p>
             html・CSSを勉強して、jquery「ライブラリがすごい」って感じた作品です。<br>
@@ -170,8 +165,9 @@
         <img src="img/scraping.png">
         <div class="article-intro">
           <p>
-           [プログラミングを学び直しのきっかけついて]<br>
-           web_scrapingを知り好奇心から自動化を始めた事<br><br>
+           [プログラミングを学び直しのきっかけについて]<br>
+           web_scrapingを知り好奇心から自動化を始めた事<br>
+           <br>
            ＜python経験ライブラリ＞<br>
            ・selenium、BeautifulSoup<br>
            ・Matplotlib、Seaborn<br>
@@ -182,10 +178,11 @@
         </div>
 
 
-        <img src="img/hp.PNG">
         <div class="article-intro">
           <p>
+            <h2>
             [ポートフォリオサイトについて]<br>
+            </h2><br>
             ・githubProjectでレンタルサーバの手順をリスト化<br>
             ・httpとhttpsに対応、Cyberdeckから手動デプロイ<br>
             ・githubActionにて、デプロイ自動化できました‼<br>
@@ -240,6 +237,7 @@
       <section class="archive">
         <h4>修正履歴</h4>
         <ul>
+          <li>2022/05/05_htmlリンク追加、css色footer、header、content、拡張子統一、typo修正
           <li>2022/05/04_python追加
           <li>2022/05/04_css修正
           <li>2022/05/04_今後git add index.htmlだけ、footer追加
@@ -277,8 +275,6 @@
     <p>Copyright © risarisato 2022<p></p>
 
  </footer>
- 
-
 
 </body>
 
